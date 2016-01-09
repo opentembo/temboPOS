@@ -1,0 +1,58 @@
+.button {
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+    -fx-border-radius: 8px;
+}
+.login-header{
+    -fx-background-color: #009688;
+    -fx-font-size: 24px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+    -fx-fill: red;
+}
+.lbl-welcome{
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+}
+.label{
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+}
+.combo-box{
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+}
+.text-field{
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+    -fx-border-radius: 0px;
+}
+.password-field{
+    -fx-font-size: 16px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+}
+.sale-header{
+    -fx-background-color: #009688;
+}
+.ot-header{
+    -fx-font-size: 18px;
+    -fx-font-weight: 200;
+    -fx-font-family: Helvetica;
+}
+.ot-author{
+    -fx-font-size: 18px;
+    -fx-font-weight: 100;
+    -fx-font-family: Helvetica;
+}
+.ot-total{
+    -fx-font-size: 48px;
+    -fx-font-weight: 200;
+    -fx-font-family: Helvetica;
+    -fx-text-fill: #B2DFDB;
+}

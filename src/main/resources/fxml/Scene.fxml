@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bpMain" maxHeight="Infinity" maxWidth="Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.opentembo.pos.FXMLController">
+    <center>
+        <SplitPane dividerPositions="0.5" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane maxWidth="200.0" minHeight="0.0" minWidth="0" prefHeight="160.0" prefWidth="200">
+                    <children>
+                        <VBox layoutX="21.0" layoutY="32.0" prefHeight="234.0" prefWidth="139.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ToolBar orientation="VERTICAL" prefHeight="359.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                          <items>
+                            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="181.0" text="Sale" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" prefWidth="188.0" text="Customers" />
+                              <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="80.0" text="Exit" />
+                          </items>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </ToolBar>
+                     </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane dividerPositions="0.1" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" styleClass="sale-header">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <VBox prefHeight="50.0" prefWidth="228.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <Label styleClass="ot-total" text="KES 120,000">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="8.0" />
+                                             </VBox.margin></Label>
+                                          <Label styleClass="ot-total" text="Kimbo 50ml">
+                                             <VBox.margin>
+                                                <Insets left="8.0" top="8.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <ToolBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" styleClass="sale-header" VBox.vgrow="ALWAYS">
+                                             <items>
+                                                <TextField prefHeight="36.0" prefWidth="200.0" promptText="Search" />
+                                             </items>
+                                          </ToolBar>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <VBox layoutX="148.0" layoutY="43.0" prefHeight="316.0" prefWidth="588.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                    <ToolBar prefHeight="40.0" prefWidth="200.0">
+                                      <items>
+                                        <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="117.0" text="Pay" />
+                                      </items>
+                                    </ToolBar>
+                                 </children>
+                              </VBox>
+                           </children></AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+    <top>
+        <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="52.0" prefWidth="484.0" HBox.hgrow="ALWAYS">
+               <items>
+                  <Label fx:id="lblTitle" styleClass="ot-header" text="Label" />
+               </items>
+            </ToolBar>
+            <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="52.0" prefWidth="369.0" HBox.hgrow="ALWAYS">
+               <items>
+                  <Label fx:id="lblAuthor" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="ot-author" text="Label" textAlignment="RIGHT" />
+               </items>
+            </ToolBar>
+         </children></HBox>
+    </top>
+</BorderPane>
